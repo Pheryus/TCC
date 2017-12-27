@@ -1,0 +1,33 @@
+\chapter{Introdução}
+
+Jogos \textit{online multiplayer} são populares e lucrativos, mantendo-se sempre em crescimento
+na indústria de jogos. Em 2016, por exemplo, a taxa de crescimento econômico dos jogos \textit{online} aumentou em 4.2\%, com uma taxa de rendimento de 27\% (Figura \ref{fig:games}) do total de rendimento de todos os tipos de jogos. Parte deste crescimento deriva dos jogos MMO's (\textit{Massive Multiplayer Online}), estilo de jogo onde grandes quantidades de jogadores jogam simultaneamente através da \textit{internet}.
+
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.6\textwidth]{imagens/1.jpg}
+		\caption[Figura ilustrando rendimentos do mercado de jogos no ano de 2016.]{Figura ilustrando rendimentos do mercado de jogos no ano de 2016.}
+		\fonte{Adaptado de \citeonline{newzoo}.}
+		\label{fig:games}	
+	\end{center}
+\end{figure}
+
+Porém, enquanto crescem e se tornam uma das aplicações mais populares para a Internet, as trapaças se tornaram um fenômeno chamativo no estado atual dos jogos na \textit{internet}, atuando não só negativamente nas experiências dos outros jogadores como também como um problema de segurança para o jogo e a empresa responsável por ele \cite{trends}. 
+
+
+Desde sua popularização, a indústria de jogos \textit{online} vem sendo alvo de diferentes tipos de trapaças, que foram evoluindo e modificando-se ao longo dos anos. Muitas delas acabaram causando problemas financeiros para a empresa responsável do jogo. \textit{Age of Empires} e \textit{America’s Army} são alguns exemplos de jogos \textit{online} que sofreram
+perdas substanciais devido ao uso de trapaças por seus jogadores \cite{cheatingonlinegames}. 
+     
+Jogos de \textit{Networked Virtual Environments} (NVEs), reconhecidos pela grande imersão que trazem aos jogadores, seja pela qualidade gráfica ou ambientação de qualidade, acabam sofrendo muito com as trapaças. Como a sensibilidade para perceber atividades ilícitas se torna maior pela ambientação grande deste tipo de jogo, o impacto negativo aos jogadores acaba sendo ainda pior. As trapaças consequentemente tornaram-se uma das formas mais rápidas de destruir a comunidade de um jogo e sua reputação comercial.  
+
+Sabendo do risco e dos problemas de segurança, diversos estudos e trabalhos surgiram para mitigar ou detectar diferentes formas de trapaças que se proliferam com a popularização dos jogos \textit{online} no mercado. Entretanto, assim como alguns tipos de trapaças puderam ser inviabilizadas com boas escolhas de \textit{design} e alterações mínimas, outras formas acabaram necessitando de recursos computacionais altos para serem detectados. Relações de perda e ganho podem ser questionadas pelos criadores do \textit{software}, onde se pode trocar uma maior segurança do jogo por um desempenho e responsividade inferior.
+
+
+Uma exemplo de vulnerabilidade que pode ser explorada pelos trapaceiros, por exemplo, é a adulteração do \textit{software} que o cliente utiliza no serviço de jogo. Em um modelo cliente-servidor, em que o cliente interage com o servidor, solicitando serviços, e o servidor atende e responde as solicitações, se a mensagem for modificada de forma a tornar-se inválida de acordo com os padrões e regras impostas pelo servidor do jogo, o servidor deve perceber sua ilegitimidade. Caso a ação não seja averiguada no servidor como  inválida, a integridade da partida pode ser comprometida. Trapaças como movimentações ilegais, atributos de personagem acima de seu devido valor, ou mesmo alterações em metadados da partida podem ocorrer devido a este tipo de trapaça. Outras trapaças, como a modificação do \textit{driver} gráfico utilizado para remover as texturas de paredes, são exemplos comuns que podem ser encontrados hoje em dia.
+
+
+Este trabalho tem como objetivo estudar diferentes comportamentos que podem ser adotados para prevenir ou detectar trapaças em jogos \textit{online}. No Capítulo 2, por existir uma grande variedade de trapaças nos jogos \textit{online}, foram estudados e catalogados os tipos de trapaças existentes em diferentes conjuntos. O trabalho foca em um destes conjuntos de trapaças, abordando estratégias para detectar ou dificultar os tipos de trapaça encontrados neste conjunto. No Capítulo 2.2, os diferentes métodos e estratégias são estudados e analisados, enquanto há um foco maior em dois métodos conhecidos na literatura: uso da execução simbólica para encontrar trapaças, e sistema de auditoria para verificar ações inválidas a partir da definição de estados abstratos e concretos.
+
+
+O Capítulo 3 apresenta a criação do jogo \textit{online Shooterman}, implementado para este trabalho na linguagem C++, onde se descreve a aplicação tanto do cliente quanto do servidor. Juntamente com o jogo, a implementação das duas estratégias sobre \textit{Shooterman} é demonstrada. No capítulo 4, os resultados obtidos dos dois métodos implementados sobre o jogo \textit{Shooterman} são avaliados e comparados.

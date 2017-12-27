@@ -1,0 +1,11 @@
+\chapter{Considerações Finais}
+\label{cap:conclusao}
+
+Esse projeto teve como propósito estudar diferentes estrátegias de detecção de trapaças em jogos \textit{online}, focando no conjunto de trapaças que envolvem a adulteração do jogo, e analisar suas características. 
+
+
+Na etapa de desenvolvimento, foi projetado e implementado um pequeno jogo \textit{online} em C++, no modelo cliente-servidor. Este jogo, chamado \textit{Shooterman} foi alvo de dois métodos estudados que verificam as mensagens enviadas pelos clientes, encontrando possíveis usuários trapaceiros e atividades ilegais. Estes dois métodos foram implementados modificando o servidor utilizado no jogo, que verificava sequências de mensagens enviadas por clientes armazenadas em arquivos.
+
+Ao final desta etapa, foi avaliado o desempenho dos métodos baseado no tempo que demoraram para verificar sequências de diferentes tamanhos de mensagens. Ambos métodos conseguiram encontrar sequências inválidas de mensagens enviadas pelo cliente, entretanto, o método que utiliza o protocolo SSIP mostrou-se superior em realizar esta tarefa. O verificador utilizando execução simbólica mostrou-se muito lento, principalmente quando o número de mensagens verificadas passou de 600, levando alguns minutos para realizar esta tarefa.
+
+Como trabalhos futuros, novos métodos de verificação podem ser implementados e analisados com maior profundidade, assim como jogos maiores e complexos podem ser alvo dos métodos, para comparar seus desempenhos em infraestruturas maiores e modelos de ações mais complexos.

@@ -1,0 +1,13 @@
+*.log
+*.aux
+*.make
+*.bbl
+*.blg
+*.d
+*.fls
+*.out
+*.toc
+.vscode
+trends_dl*
+*-pics.pdf
+*-eps-converted-to.pdf
